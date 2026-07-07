@@ -13,7 +13,7 @@
 | ファイル名 | アプリ |
 |---|---|
 | `national-flag-quest-thumb.png` | あおくんの国旗クエスト |
-| `block-puzzle-thumb.png` | あおくんのブロックパズル（★アプリアイコンを配置済み） |
+| `block-puzzle-thumb.png` | あおくんのブロックパズル（★配置済み・`tools/make_app_images.py`で生成） |
 | `bear-trail-thumb.png` | ベア・トレイル |
 | `tower-defender-thumb.png` | Tower Defender |
 | `subsclens-thumb.png` | SubscLens |
@@ -28,8 +28,10 @@
 | `bear-trail-1.png`〜`bear-trail-4.png` | スクリーンショット | 縦向き（例 1170 × 2532px） |
 | `national-flag-quest-icon.png` | アプリアイコン（あおくんの国旗クエスト） | 512 × 512px（正方形） |
 | `national-flag-quest-1.png`〜`national-flag-quest-4.png` | スクリーンショット（あおくんの国旗クエスト） | 縦向き（例 1170 × 2532px） |
-| `block-puzzle-icon.png` | アプリアイコン（あおくんのブロックパズル・配置済み 1024×1024） | 512 × 512px（正方形） |
+| `block-puzzle-icon.png` | アプリアイコン（あおくんのブロックパズル・配置済み 512×512） | 512 × 512px（正方形） |
 | `block-puzzle-1.png`〜`block-puzzle-4.png` | スクリーンショット（あおくんのブロックパズル・未配置） | 縦向き（例 1170 × 2532px） |
+
+> `block-puzzle-icon.png` / `-thumb.png` は `tools/make_app_images.py` でアプリアイコンから生成しています（他アプリも同スクリプトで統一可能）。
 
 他のアプリの詳細ページを作るときも、同じ命名ルール（`アプリ名-icon.png` / `アプリ名-1.png`…）で用意すると分かりやすいです。
 
