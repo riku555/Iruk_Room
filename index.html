@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iruk | アプリ開発者ポートフォリオ</title>
+  <meta name="description" content="Irukのポートフォリオサイト。あおくんシリーズ、ボードゲーム、ライフスタイルなど、さまざまなジャンルのアプリを開発しています。" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">Iruk<span>.</span></a>
+      <button class="nav-toggle" aria-label="メニュー">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="apps.html">アプリ一覧</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li><a href="https://x.com/pieefo" target="_blank" rel="noopener">X</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="tagline">Indie App Developer</p>
+        <h1>こんにちは、Iruk です。</h1>
+        <p class="lead">
+          「あおくんシリーズ」やボードゲーム、ライフスタイルまで──
+          日々の暮らしがちょっと楽しく、便利になるアプリを個人で開発しています。
+          遊び心のあるアイデアを、丁寧なつくりで形にすることを大切にしています。
+        </p>
+        <div class="hero-actions">
+          <a href="apps.html" class="btn btn-primary">アプリ一覧を見る</a>
+          <a href="contact.html" class="btn btn-ghost">お問い合わせ</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <!-- 画像差し替え: images/iruk-avatar.png (正方形, 推奨 600x600px) -->
+        <span class="placeholder">プロフィール画像<br>images/iruk-avatar.png</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Featured apps ===== -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">注目のアプリ</h2>
+      <p class="section-lead">最近リリース・開発中のアプリをピックアップ</p>
+
+      <div class="card-grid">
+        <a href="apps/bear-trail.html" class="app-card" data-category="board">
+          <div class="app-thumb"><span>images/bear-trail-thumb.png</span></div>
+          <div class="app-body">
+            <div class="app-meta"><span class="badge board">ボードゲーム</span></div>
+            <h3>ベア・トレイル</h3>
+            <p>クマの足跡を推理するデジタルボードゲーム。</p>
+          </div>
+        </a>
+
+        <a href="apps.html" class="app-card" data-category="life">
+          <div class="app-thumb"><span>images/subsclens-thumb.png</span></div>
+          <div class="app-body">
+            <div class="app-meta"><span class="badge life">ライフスタイル</span></div>
+            <h3>SubscLens</h3>
+            <p>サブスクをまとめて管理。ムダな支出に気づけるアプリ。</p>
+          </div>
+        </a>
+
+        <a href="apps.html" class="app-card" data-category="life">
+          <div class="app-thumb"><span>images/heartsound-thumb.png</span></div>
+          <div class="app-body">
+            <div class="app-meta"><span class="badge life">ライフスタイル</span></div>
+            <h3>赤ちゃんの心音＆妊娠記録</h3>
+            <p>心音を聴いて、妊娠期間の思い出を記録。</p>
+          </div>
+        </a>
+      </div>
+
+      <div style="text-align:center; margin-top:36px;">
+        <a href="apps.html" class="btn btn-ghost">すべてのアプリを見る →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="section" style="background:var(--surface);">
+    <div class="container" style="max-width:720px; text-align:center;">
+      <h2 class="section-title">Irukについて</h2>
+      <p style="color:var(--text-muted);">
+        個人でアプリを企画・デザイン・開発しています。
+        「あおくんシリーズ」のようなキャラクターものから、
+        じっくり遊べるボードゲーム、毎日を助けるライフスタイルアプリまで、
+        ジャンルにとらわれず「作ってみたい」を形にしています。
+        ご意見・ご感想・お仕事のご相談はお気軽にどうぞ。
+      </p>
+      <a href="contact.html" class="btn btn-primary" style="margin-top:12px;">連絡する</a>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Iruk</h4>
+          <p style="color:var(--text-muted); font-size:.9rem; max-width:260px;">個人アプリ開発者。さまざまなジャンルのアプリを制作中。</p>
+          <div class="social">
+            <a href="https://x.com/pieefo" target="_blank" rel="noopener" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23 22h-6.9l-5.4-7-6.2 7H1.3l8.1-9.3L1 2h7.1l4.9 6.5L18.9 2Zm-2.4 18h1.9L7.6 4H5.6l10.9 16Z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4>メニュー</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="apps.html">アプリ一覧</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>カテゴリ</h4>
+          <ul class="footer-links">
+            <li><a href="apps.html">あおくんシリーズ</a></li>
+            <li><a href="apps.html">ボードゲーム</a></li>
+            <li><a href="apps.html">ライフスタイル</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">© 2026 Iruk. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

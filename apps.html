@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>アプリ一覧 | Iruk</title>
+  <meta name="description" content="Irukが開発したアプリの一覧。あおくんシリーズ、ボードゲーム、ライフスタイルなどカテゴリ別に紹介しています。" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">Iruk<span>.</span></a>
+      <button class="nav-toggle" aria-label="メニュー">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="apps.html">アプリ一覧</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li><a href="https://x.com/pieefo" target="_blank" rel="noopener">X</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="container">
+    <nav class="breadcrumb"><a href="index.html">ホーム</a> ／ アプリ一覧</nav>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="section-title">アプリ一覧</h1>
+      <p class="section-lead">カテゴリで絞り込んでご覧いただけます</p>
+
+      <!-- Category filter -->
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">すべて</button>
+        <button class="filter-btn" data-filter="aokun">あおくんシリーズ</button>
+        <button class="filter-btn" data-filter="board">ボードゲーム</button>
+        <button class="filter-btn" data-filter="life">ライフスタイル</button>
+        <button class="filter-btn" data-filter="other">その他</button>
+      </div>
+
+      <div class="card-grid">
+
+        <!-- あおくんシリーズ -->
+        <a href="apps/aokun.html" class="app-card" data-category="aokun">
+          <div class="app-thumb"><span>images/aokun-thumb.png</span></div>
+          <div class="app-body">
+            <div class="app-meta"><span class="badge aokun">あおくんシリーズ</span></div>
+            <h3>あおくん（仮）</h3>
+            <p>あおくんが活躍するシリーズアプリ。※内容を教えてください。</p>
+          </div>
+        </a>
+
+        <!-- ボードゲーム -->
+        <a href="apps/bear-trail.html" class="app-card" data-category="board">
+          <div class="app-thumb"><span>images/bear-trail-thumb.png</span></div>
+          <div class="app-body">
+            <div class="app-meta"><span class="badge board">ボードゲーム</span></div>
+            <h3>ベア・トレイル</h3>
+            <p>クマの足跡を手がかりに推理するデジタルボードゲーム。</p>
+          </div>
+        </a>
+
+        <a href="apps/tower-defender.html" class="app-card" data-category="board">
+          <div class="app-thumb"><span>images/tower-defender-thumb.png</span></div>
+          <div class="app-body">
+            <div class="app-meta"><span class="badge board">ボードゲーム</span></div>
+            <h3>Tower Defender（仮）</h3>
+            <p>タワーディフェンス系ゲーム。※内容を教えてください。</p>
+          </div>
+        </a>
+
+        <!-- ライフスタイル -->
+        <a href="apps/subsclens.html" class="app-card" data-category="life">
+          <div class="app-thumb"><span>images/subsclens-thumb.png</span></div>
+          <div class="app-body">
+            <div class="app-meta"><span class="badge life">ライフスタイル</span></div>
+            <h3>SubscLens</h3>
+            <p>サブスクをまとめて管理し、ムダな支出に気づけるアプリ。</p>
+          </div>
+        </a>
+
+        <a href="apps/heartsound.html" class="app-card" data-category="life">
+          <div class="app-thumb"><span>images/heartsound-thumb.png</span></div>
+          <div class="app-body">
+            <div class="app-meta"><span class="badge life">ライフスタイル</span></div>
+            <h3>赤ちゃんの心音＆妊娠記録</h3>
+            <p>赤ちゃんの心音を聴いて、妊娠期間の思い出を記録できるアプリ。</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Iruk</h4>
+          <p style="color:var(--text-muted); font-size:.9rem; max-width:260px;">個人アプリ開発者。さまざまなジャンルのアプリを制作中。</p>
+          <div class="social">
+            <a href="https://x.com/pieefo" target="_blank" rel="noopener" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23 22h-6.9l-5.4-7-6.2 7H1.3l8.1-9.3L1 2h7.1l4.9 6.5L18.9 2Zm-2.4 18h1.9L7.6 4H5.6l10.9 16Z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4>メニュー</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="apps.html">アプリ一覧</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>カテゴリ</h4>
+          <ul class="footer-links">
+            <li><a href="apps.html">あおくんシリーズ</a></li>
+            <li><a href="apps.html">ボードゲーム</a></li>
+            <li><a href="apps.html">ライフスタイル</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">© 2026 Iruk. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
