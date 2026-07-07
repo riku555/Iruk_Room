@@ -12,7 +12,7 @@
 ## アプリ一覧・トップのサムネイル（16:10 推奨）
 | ファイル名 | アプリ |
 |---|---|
-| `aokun-thumb.png` | あおくん（シリーズ） |
+| `national-flag-quest-thumb.png` | あおくんの国旗クエスト |
 | `bear-trail-thumb.png` | ベア・トレイル |
 | `tower-defender-thumb.png` | Tower Defender |
 | `subsclens-thumb.png` | SubscLens |
@@ -25,6 +25,8 @@
 |---|---|---|
 | `bear-trail-icon.png` | アプリアイコン | 512 × 512px（正方形） |
 | `bear-trail-1.png`〜`bear-trail-4.png` | スクリーンショット | 縦向き（例 1170 × 2532px） |
+| `national-flag-quest-icon.png` | アプリアイコン（あおくんの国旗クエスト） | 512 × 512px（正方形） |
+| `national-flag-quest-1.png`〜`national-flag-quest-4.png` | スクリーンショット（あおくんの国旗クエスト） | 縦向き（例 1170 × 2532px） |
 
 他のアプリの詳細ページを作るときも、同じ命名ルール（`アプリ名-icon.png` / `アプリ名-1.png`…）で用意すると分かりやすいです。
 
