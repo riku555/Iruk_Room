@@ -161,6 +161,7 @@ p { margin: 0 0 1em; }
 .badge.board { background: var(--cat-board); }
 .badge.life  { background: var(--cat-life); }
 .badge.other { background: var(--cat-other); }
+.badge.dev   { background: var(--accent); }   /* 開発中ステータス */
 
 /* ---------- Category filter ---------- */
 .filters { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 36px; }
