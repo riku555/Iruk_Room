@@ -19,7 +19,7 @@
 | `bear-trail-thumb.png` | ベア・トレイル（★配置済み・`tools/make_app_images.py`で生成） |
 | `tower-defender-thumb.png` | Tower Defender |
 | `subsclens-thumb.png` | SubscLens |
-| `heartsound-thumb.png` | 赤ちゃんの心音＆妊娠記録 |
+| `heartsound-thumb.png` | 赤ちゃんの心音＆妊娠記録（★配置済み・`tools/make_app_images.py`で生成） |
 
 推奨サイズ：640 × 400px 程度
 
@@ -36,6 +36,8 @@
 | `word-puzzle-1.png`〜`word-puzzle-4.png` | スクリーンショット（あおくんの英単語パズル・未配置） | 縦向き（例 1170 × 2532px） |
 | `license-museum-icon.png` | アプリアイコン（あおくんの資格博物館・配置済み 512×512） | 512 × 512px（正方形） |
 | `license-museum-1.png`〜`license-museum-4.png` | スクリーンショット（あおくんの資格博物館・未配置） | 縦向き（例 1170 × 2532px） |
+| `heartsound-icon.png` | アプリアイコン（赤ちゃんの心音＆妊娠記録・配置済み 512×512） | 512 × 512px（正方形） |
+| `heartsound-1.png`〜`heartsound-4.png` | スクリーンショット（赤ちゃんの心音＆妊娠記録・未配置） | 縦向き（例 1170 × 2532px） |
 
 > `block-puzzle-icon.png` / `-thumb.png` は `tools/make_app_images.py` でアプリアイコンから生成しています（他アプリも同スクリプトで統一可能）。
 
