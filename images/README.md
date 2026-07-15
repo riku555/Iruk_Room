@@ -17,6 +17,7 @@
 | `word-puzzle-thumb.png` | あおくんの英単語パズル（★配置済み・`tools/make_app_images.py`で生成） |
 | `license-museum-thumb.png` | あおくんの資格博物館（★配置済み・`tools/make_app_images.py`で生成） |
 | `board-game-thumb.png` | あおくんのゲーム工房・開発中 |
+| `bond-bond-thumb.png` | Bond Bond!（元素結合ボードゲーム・★配置済み・`tools/make_app_images.py`で生成） |
 | `bear-trail-thumb.png` | ベア・トレイル（★配置済み・`tools/make_app_images.py`で生成） |
 | `tower-defender-thumb.png` | Tower Defender |
 | `subsclens-thumb.png` | SubscLens |
@@ -31,6 +32,8 @@
 | `bear-trail-1.png`〜`bear-trail-4.png` | スクリーンショット（未配置・開発中） | 縦向き（例 1170 × 2532px） |
 | `board-game-icon.png` | アプリアイコン（あおくんのゲーム工房・未配置） | 512 × 512px（正方形） |
 | `board-game-1.png`〜`board-game-4.png` | スクリーンショット（あおくんのゲーム工房・未配置） | 縦向き（例 1170 × 2532px） |
+| `bond-bond-icon.png` | アプリアイコン（Bond Bond!・★配置済み 512×512・`tools/make_app_images.py`で生成） | 512 × 512px（正方形） |
+| `bond-bond-1.png`〜`bond-bond-4.png` | スクリーンショット（Bond Bond!・未配置・開発中） | 縦向き（例 1170 × 2532px） |
 | `national-flag-quest-icon.png` | アプリアイコン（あおくんの国旗クエスト） | 512 × 512px（正方形） |
 | `national-flag-quest-1.png`〜`national-flag-quest-4.png` | スクリーンショット（あおくんの国旗クエスト） | 縦向き（例 1170 × 2532px） |
 | `block-puzzle-icon.png` | アプリアイコン（あおくんのブロックパズル・配置済み 512×512） | 512 × 512px（正方形） |
