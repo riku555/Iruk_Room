@@ -17,7 +17,7 @@
 | `word-puzzle-thumb.png` | あおくんの英単語パズル（★配置済み・`tools/make_app_images.py`で生成） |
 | `license-museum-thumb.png` | あおくんの資格博物館（★配置済み・`tools/make_app_images.py`で生成） |
 | `board-game-thumb.png` | あおくんのゲーム工房・開発中 |
-| `classical-music-quest-thumb.png` | あおくんのクラシック音楽クエスト（★配置済み・`tools/make_app_images.py`で生成） |
+| `classical-music-quest-thumb.png` | あおくんの音楽クエスト（★配置済み・`tools/make_app_images.py`で生成） |
 | `bond-bond-thumb.png` | Bond Bond!（元素結合ボードゲーム・★配置済み・`tools/make_app_images.py`で生成） |
 | `bear-trail-thumb.png` | ベア・トレイル（★配置済み・`tools/make_app_images.py`で生成） |
 | `tower-defender-thumb.png` | Tower Defender |
@@ -45,8 +45,8 @@
 | `license-museum-1.png`〜`license-museum-4.png` | スクリーンショット（あおくんの資格博物館・未配置） | 縦向き（例 1170 × 2532px） |
 | `heartsound-icon.png` | アプリアイコン（赤ちゃんの心音＆妊娠記録・配置済み 512×512） | 512 × 512px（正方形） |
 | `heartsound-1.png`〜`heartsound-4.png` | スクリーンショット（赤ちゃんの心音＆妊娠記録・未配置） | 縦向き（例 1170 × 2532px） |
-| `classical-music-quest-icon.png` | アプリアイコン（あおくんのクラシック音楽クエスト・★配置済み 512×512・`tools/make_app_images.py`で生成） | 512 × 512px（正方形） |
-| `classical-music-quest-1.png`〜`classical-music-quest-4.png` | スクリーンショット（あおくんのクラシック音楽クエスト・未配置・開発中） | 縦向き（例 1170 × 2532px） |
+| `classical-music-quest-icon.png` | アプリアイコン（あおくんの音楽クエスト・★配置済み 512×512・`tools/make_app_images.py`で生成） | 512 × 512px（正方形） |
+| `classical-music-quest-1.png`〜`classical-music-quest-4.png` | スクリーンショット（あおくんの音楽クエスト・未配置・開発中） | 縦向き（例 1170 × 2532px） |
 
 > `block-puzzle-icon.png` / `-thumb.png` は `tools/make_app_images.py` でアプリアイコンから生成しています（他アプリも同スクリプトで統一可能）。
 
