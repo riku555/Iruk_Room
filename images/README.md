@@ -38,7 +38,7 @@
 | `national-flag-quest-icon.png` | アプリアイコン（あおくんの国旗クエスト） | 512 × 512px（正方形） |
 | `national-flag-quest-1.png`〜`national-flag-quest-4.png` | スクリーンショット（あおくんの国旗クエスト） | 縦向き（例 1170 × 2532px） |
 | `block-puzzle-icon.png` | アプリアイコン（あおくんのブロックパズル・配置済み 512×512） | 512 × 512px（正方形） |
-| `block-puzzle-1.png`〜`block-puzzle-4.png` | スクリーンショット（あおくんのブロックパズル・未配置） | 縦向き（例 1170 × 2532px） |
+| `block-puzzle-1.jpg`〜`block-puzzle-5.jpg` | スクリーンショット（あおくんのブロックパズル・★配置済み 640幅JPEG・`tools/fetch_store_screenshots.py`で取得） | 縦向き |
 | `word-puzzle-icon.png` | アプリアイコン（あおくんの英単語パズル・配置済み 512×512） | 512 × 512px（正方形） |
 | `word-puzzle-1.png`〜`word-puzzle-4.png` | スクリーンショット（あおくんの英単語パズル・未配置） | 縦向き（例 1170 × 2532px） |
 | `license-museum-icon.png` | アプリアイコン（あおくんの資格博物館・配置済み 512×512） | 512 × 512px（正方形） |
@@ -50,7 +50,37 @@
 
 > `block-puzzle-icon.png` / `-thumb.png` は `tools/make_app_images.py` でアプリアイコンから生成しています（他アプリも同スクリプトで統一可能）。
 
-他のアプリの詳細ページを作るときも、同じ命名ルール（`アプリ名-icon.png` / `アプリ名-1.png`…）で用意すると分かりやすいです。
+他のアプリの詳細ページを作るときも、同じ命名ルール（`アプリ名-icon.png` / `アプリ名-1.jpg`…）で用意すると分かりやすいです。
+
+## スクリプトで画像を用意する
+
+`tools/` に2つの生成スクリプトがあります（Python + Pillow が必要: `pip install pillow`）。
+
+### 1. アイコン・サムネの生成 — `make_app_images.py`
+アプリアイコン（正方形PNG）から、サイト用の `-icon.png`（512²）と `-thumb.png`（640×400・淡色グラデ背景に中央配置）を生成。
+```bash
+python tools/make_app_images.py --src <icon.png> --slug <slug> --top FBF4E4 --bottom F1E4C6
+```
+
+### 2. App Store スクショの取得 — `fetch_store_screenshots.py`
+**配信中アプリ**の App Store 商品ページから公開スクショを取得し、Web用に軽量化（幅640・JPEG）して `images/<slug>-N.jpg` に保存。自分のアプリのスクショなので権利上も問題なし。
+```bash
+# まずURLだけ確認（--dry-run）
+python tools/fetch_store_screenshots.py --id <AppStore数値ID> --slug <slug> --dry-run
+# 取得して配置（例: ブロックパズル）
+python tools/fetch_store_screenshots.py --id 6777042903 --slug block-puzzle
+```
+主なオプション: `--max N`（枚数制限）/ `--device pad`（iPad版）/ `--width 640` / `--country jp`。
+実行後に表示される `<div class="shot"><img …></div>` を、詳細ページ `apps/<slug>.html` のスクショ欄に貼れば完成。
+
+配信中アプリの App Store 数値ID（`apps.apple.com/jp/app/idXXXXXXXXXX` の数字）:
+| アプリ | slug | ID |
+|---|---|---|
+| あおくんのブロックパズル | block-puzzle | 6777042903（★取得済み） |
+| あおくんの英単語パズル | word-puzzle | 6778866021 |
+| あおくんの資格博物館 | license-museum | 6780581953 |
+
+> 他の配信中アプリ（国旗クエスト・音楽クエスト・Bond Bond!・SubscLens・ベア・トレイル）は、商品ページURLの数値IDを調べて同じ手順で取得できます。
 
 ---
 
