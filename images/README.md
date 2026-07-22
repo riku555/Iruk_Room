@@ -73,14 +73,21 @@ python tools/fetch_store_screenshots.py --id 6777042903 --slug block-puzzle
 主なオプション: `--max N`（枚数制限）/ `--device pad`（iPad版）/ `--width 640` / `--country jp`。
 実行後に表示される `<div class="shot"><img …></div>` を、詳細ページ `apps/<slug>.html` のスクショ欄に貼れば完成。
 
-配信中アプリの App Store 数値ID（`apps.apple.com/jp/app/idXXXXXXXXXX` の数字）:
-| アプリ | slug | ID |
-|---|---|---|
-| あおくんのブロックパズル | block-puzzle | 6777042903（★取得済み） |
-| あおくんの英単語パズル | word-puzzle | 6778866021 |
-| あおくんの資格博物館 | license-museum | 6780581953 |
+配信中アプリの App Store 数値ID（`apps.apple.com/jp/app/idXXXXXXXXXX` の数字）。**開発者(RIKU KAKIZOE, artistId 6775458025)の配信中8アプリすべてスクショ取得・詳細ページ適用済み（2026-07-23）**:
 
-> 他の配信中アプリ（国旗クエスト・音楽クエスト・Bond Bond!・SubscLens・ベア・トレイル）は、商品ページURLの数値IDを調べて同じ手順で取得できます。
+| アプリ | slug | ID | スクショ |
+|---|---|---|---|
+| あおくんのブロックパズル | block-puzzle | 6777042903 | ★5枚 |
+| あおくんの英単語パズル | word-puzzle | 6778866021 | ★6枚 |
+| あおくんの国旗クエスト | national-flag-quest | 6780043491 | ★6枚 |
+| あおくんの資格博物館 | license-museum | 6780581953 | ★6枚 |
+| あおくんの音楽クエスト | classical-music-quest | 6781711066 | ★6枚 |
+| Bond Bond! | bond-bond | 6789931687 | ★6枚 |
+| ベア・トレイル | bear-trail | 6785072315 | ★4枚（縦のみ） |
+| SubscLens | subsclens | 6787697501 | ★5枚 |
+
+> スクショは縦向き（`--orientation portrait`）・最大6枚（`--max 6`）で取得。ベア・トレイル/資格博物館は横向きスクショも持つが、サイトの縦型枠に合わせ縦向きのみ採用している。
+> 開発者の全アプリIDは `python -c "import json,urllib.request as u; print(u.urlopen('https://itunes.apple.com/lookup?id=6775458025&entity=software&country=jp&limit=200').read().decode())"` で一覧取得できる。
 
 ---
 

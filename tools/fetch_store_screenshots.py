@@ -123,6 +123,9 @@ def main() -> int:
     ap.add_argument("--country", default="jp", help="ストア地域（既定: jp）")
     ap.add_argument("--device", default="phone", choices=["phone", "pad"],
                     help="端末（既定: phone）")
+    ap.add_argument("--orientation", default="portrait",
+                    choices=["portrait", "landscape", "all"],
+                    help="向きで絞り込む（既定: portrait。サイトの縦型枠に合わせる）")
     ap.add_argument("--width", type=int, default=640, help="保存幅px（既定: 640）")
     ap.add_argument("--quality", type=int, default=87, help="JPEG品質（既定: 87）")
     ap.add_argument("--max", type=int, default=0, help="最大枚数（0=全部）")
@@ -141,6 +144,17 @@ def main() -> int:
         print("スクリーンショットを取得できませんでした。IDと地域(--country)を確認してください。",
               file=sys.stderr)
         return 1
+
+    # 向きで絞り込み（Lookup API 由来の直URLは幅高さ不明なので素通し）
+    if args.orientation != "all":
+        def _match(s):
+            w, h = s.get("width", 0), s.get("height", 0)
+            if not w or not h:
+                return True
+            return (h >= w) if args.orientation == "portrait" else (w > h)
+        filtered = [s for s in shots if _match(s)]
+        if filtered:
+            shots = filtered
 
     if args.max > 0:
         shots = shots[:args.max]
