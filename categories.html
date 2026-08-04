@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>アプリ一覧 | Iruk</title>
-  <meta name="description" content="Irukが開発したアプリの一覧。あおくんシリーズ、ボードゲーム、ライフスタイルなどカテゴリ別に紹介しています。" />
+  <title>カテゴリ | Iruk</title>
+  <meta name="description" content="Irukのアプリをカテゴリ別に紹介。あおくんシリーズ、インディーズゲーム、ライフスタイルの3カテゴリで開発中・配信中のアプリをまとめています。" />
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -27,26 +27,26 @@
   </header>
 
   <div class="container">
-    <nav class="breadcrumb"><a href="index.html">ホーム</a> ／ アプリ一覧</nav>
+    <nav class="breadcrumb"><a href="index.html">ホーム</a> ／ カテゴリ</nav>
   </div>
 
-  <section class="section">
+  <section class="section" style="padding-bottom:8px;">
     <div class="container">
-      <h1 class="section-title">アプリ一覧</h1>
-      <p class="section-lead">カテゴリで絞り込んでご覧いただけます</p>
+      <h1 class="section-title">カテゴリ</h1>
+      <p class="section-lead">ジャンルごとにアプリをまとめました</p>
+    </div>
+  </section>
 
-      <!-- Category filter -->
-      <div class="filters">
-        <button class="filter-btn active" data-filter="all">すべて</button>
-        <button class="filter-btn" data-filter="aokun">あおくんシリーズ</button>
-        <button class="filter-btn" data-filter="board">インディーズゲーム</button>
-        <button class="filter-btn" data-filter="life">ライフスタイル</button>
-        <button class="filter-btn" data-filter="other">その他</button>
+  <section class="section cat-section" id="aokun">
+    <div class="container">
+      <div class="cat-head">
+        <span class="cat-emoji">🐱</span>
+        <div>
+          <h2>あおくんシリーズ <span class="cat-count">6アプリ</span></h2>
+          <p>ロシアンブルーの子猫「あおくん」がナビ役。遊びながら学べる、教育＆カジュアルアプリのシリーズです。</p>
+        </div>
       </div>
-
       <div class="card-grid">
-
-        <!-- あおくんシリーズ -->
         <a href="apps/national-flag-quest.html" class="app-card" data-category="aokun">
           <div class="app-thumb"><img src="images/national-flag-quest-thumb.png" alt="あおくんの国旗クエスト" /></div>
           <div class="app-body">
@@ -100,8 +100,20 @@
             <p>有名クラシック30曲を、曲当てクイズ・穴埋め譜面・メロディ再現・自由演奏で覚える音楽学習アプリ。触れる楽譜とピアノ鍵盤つき。広告なし。App Store配信中。</p>
           </div>
         </a>
+      </div>
+    </div>
+  </section>
 
-        <!-- インディーズゲーム -->
+  <section class="section cat-section" id="board" style="background:var(--surface);">
+    <div class="container">
+      <div class="cat-head">
+        <span class="cat-emoji">🎮</span>
+        <div>
+          <h2>インディーズゲーム <span class="cat-count">2アプリ</span></h2>
+          <p>じっくり遊べるオリジナルゲーム。ボードゲームや推理ゲームなど、こだわって作った自作ゲーム作品です。</p>
+        </div>
+      </div>
+      <div class="card-grid">
         <a href="apps/bond-bond.html" class="app-card" data-category="board">
           <div class="app-thumb"><img src="images/bond-bond-thumb.png" alt="Bond Bond!（元素結合ボードゲーム）" /></div>
           <div class="app-body">
@@ -119,8 +131,20 @@
             <p>痕跡からクマの居場所と性格を論理的に推理して確保する推理ゲーム。ソロ＆最大4人の通信対戦対応。App Store配信中。</p>
           </div>
         </a>
+      </div>
+    </div>
+  </section>
 
-        <!-- ライフスタイル -->
+  <section class="section cat-section" id="life">
+    <div class="container">
+      <div class="cat-head">
+        <span class="cat-emoji">🌱</span>
+        <div>
+          <h2>ライフスタイル <span class="cat-count">2アプリ</span></h2>
+          <p>毎日の暮らしを、ちょっと便利に・心地よく。日常に寄り添うツール系アプリです。</p>
+        </div>
+      </div>
+      <div class="card-grid">
         <a href="apps/subsclens.html" class="app-card" data-category="life">
           <div class="app-thumb"><img src="images/subsclens-thumb.png" alt="SubscLens（サブスク管理）" /></div>
           <div class="app-body">
@@ -138,7 +162,6 @@
             <p>おなかの音を録音して残し、妊娠週数・赤ちゃんの成長・毎日の体調を記録できるマタニティアプリ。iOS向けに開発中。</p>
           </div>
         </a>
-
       </div>
     </div>
   </section>
@@ -160,6 +183,7 @@
           <ul class="footer-links">
             <li><a href="index.html">ホーム</a></li>
             <li><a href="apps.html">アプリ一覧</a></li>
+            <li><a href="categories.html">カテゴリ</a></li>
             <li><a href="contact.html">お問い合わせ</a></li>
           </ul>
         </div>
