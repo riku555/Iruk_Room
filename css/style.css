@@ -242,3 +242,22 @@ p { margin: 0 0 1em; }
 .breadcrumb { font-size: .85rem; color: var(--text-muted); padding: 18px 0 0; }
 .breadcrumb a { color: var(--text-muted); }
 .breadcrumb a:hover { color: var(--primary); }
+
+/* ---------- Category page ---------- */
+.cat-section { padding: 44px 0; }
+.cat-head { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 26px; }
+.cat-emoji {
+  font-size: 2rem; line-height: 1; flex: 0 0 auto;
+  width: 60px; height: 60px; border-radius: 16px; background: var(--surface-2);
+  display: flex; align-items: center; justify-content: center;
+}
+.cat-head h2 { font-size: 1.5rem; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.cat-count {
+  font-size: .75rem; font-weight: 700; color: var(--text-muted);
+  background: var(--surface-2); padding: 3px 10px; border-radius: 999px;
+}
+.cat-head p { color: var(--text-muted); margin-top: 6px; max-width: 640px; font-size: .95rem; }
+@media (max-width: 560px) {
+  .cat-emoji { width: 48px; height: 48px; font-size: 1.6rem; }
+  .cat-head h2 { font-size: 1.25rem; }
+}
