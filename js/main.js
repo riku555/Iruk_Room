@@ -12,7 +12,7 @@
      3. コミットして反映（全ページ共通で計測が有効になる）
    空文字のままなら計測タグは読み込まれず、無駄な通信も発生しない。
    ========================================================================= */
-var GOATCOUNTER_ENDPOINT = ""; /* 例: "https://iruk.goatcounter.com/count" */
+var GOATCOUNTER_ENDPOINT = "https://iruk.goatcounter.com/count";
 
 (function () {
   if (!GOATCOUNTER_ENDPOINT) return; /* 未設定なら何もしない */
