@@ -113,7 +113,11 @@ def screenshots_from_lookup(app_id: str, country: str, device: str) -> list:
 
 
 def resolve_url(shot: dict) -> str:
-    return shot["_direct"] if "_direct" in shot else build_url(shot)
+    if "_direct" in shot:
+        # Lookup API の直URLは低解像度(例 320x480)なので高解像度の箱に置き換える
+        # （末尾の /NNNxNNNbb.jpg を大きめの箱へ。bb はソースの縦横比を保持）
+        return re.sub(r"/\d+x\d+[a-z]*\.(jpg|jpeg|png)$", "/2000x4000bb.jpg", shot["_direct"])
+    return build_url(shot)
 
 
 def main() -> int:
@@ -133,12 +137,12 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true", help="URL一覧を表示するだけ")
     args = ap.parse_args()
 
-    # 1) Lookup API → 空なら 2) 商品ページHTML
-    shots = screenshots_from_lookup(args.id, args.country, args.device)
-    source = "lookup-api"
+    # 1) 商品ページHTML（ネイティブ解像度のテンプレートが得られる）→ 空なら 2) Lookup API
+    shots = screenshots_from_page(args.id, args.country, args.device)
+    source = "product-page"
     if not shots:
-        shots = screenshots_from_page(args.id, args.country, args.device)
-        source = "product-page"
+        shots = screenshots_from_lookup(args.id, args.country, args.device)
+        source = "lookup-api"
 
     if not shots:
         print("スクリーンショットを取得できませんでした。IDと地域(--country)を確認してください。",
